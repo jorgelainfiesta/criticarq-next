@@ -1,0 +1,23 @@
+backend:
+  name: test-repo
+  branch: master # Branch to update (optional; defaults to master)
+
+media_folder: public/images
+public_folder: /images
+
+collections:
+  - name: 'article'
+    label: 'Article'
+    folder: 'content/article'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    path: '{{title}}/index'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
