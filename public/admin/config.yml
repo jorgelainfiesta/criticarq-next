@@ -10,8 +10,8 @@ collections:
     folder: 'content/article'
     create: true
     slug: 'index'
+    public_folder: 'public/'
     media_folder: 'public/images'
-    public_folder: 'public/posts'
     path: '{{title}}/index'
     editor:
       preview: false
